@@ -10,6 +10,7 @@ if [[ ! -z "${WORKSHOP_MAP_ID}" ]]; then
     "${STEAMCMDDIR}/steamcmd.sh" +force_install_dir "${STEAMAPPDIR}" +login anonymous +workshop_download_item "${WORKSHOPID}" "${WORKSHOP_MAP_ID}" +quit
 fi
 
+
 bash "${STEAMAPPDIR}/Binaries/Linux/PerfectHeist2Server.sh" \
 	${MAP} \
 	-Port=${PORT} \
